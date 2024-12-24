@@ -4,7 +4,7 @@ export const UserInfo = ({ user }) => {
   return (
     <a
       className="UserInfo"
-      ref={`mailto:${email}`}
+      href={`mailto:${email}`}
     >
       {name}
     </a>
