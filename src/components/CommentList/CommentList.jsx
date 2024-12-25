@@ -4,9 +4,7 @@ import './CommentList.scss';
 export const CommentList = ({ comments }) => {
   if (!comments.length) {
     return (
-      <div
-        data-cy="NoCommentsMessage"
-      >
+      <div data-cy="NoCommentsMessage">
         No comments yet
       </div>
     );

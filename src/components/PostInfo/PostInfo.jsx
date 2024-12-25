@@ -11,12 +11,7 @@ export const PostInfo = ({ post }) => {
         <h3 className="PostInfo__title">
           {title}
         </h3>
-
-        <p>
-          {' Posted by  '}
-
-          <UserInfo user={user} />
-        </p>
+        <UserInfo user={user} />
       </div>
 
       <p className="PostInfo__body">

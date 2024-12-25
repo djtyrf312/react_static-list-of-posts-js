@@ -6,9 +6,9 @@ import usersFromServer from './api/users.json';
 import { PostList } from './components/PostList';
 
 const posts = postsFromServer.map(post => {
-  const user = usersFromServer.find(userData => userData.id === post.userId);
+  const user = usersFromServer.find(({ id }) => id === post.userId);
   const comments = commentsFromServer.filter(
-    comment => comment.postId === post.id,
+    ({ postId }) => postId === post.id,
   );
 
   return { ...post, user, comments };
